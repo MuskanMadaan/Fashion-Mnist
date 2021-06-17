@@ -1,0 +1,36 @@
+<html>
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-vis"></script>
+
+</head>
+<body>
+    <h1>Fashion Classifier!</h1>
+    <canvas id="canvas" width="280" height="280" style="position:absolute;top:100;left:100;border:8px solid;"></canvas>
+    <img id="canvasimg" style="position:absolute;top:10%;left:52%;width=280;height=280;display:none;">
+    <input type="button" value="classify" id="sb" size="48" style="position:absolute;top:400;left:100;">
+    <input type="button" value="clear" id="cb" size="23" style="position:absolute;top:400;left:180;">
+    <script src="fashion-data.js" type="module"></script>
+    <script src="fashion-script.js" type="module"></script>
+    <br><br><br><br><br>
+<div style = "width: 280px;
+  padding: 10px;
+  border: 5px solid gray;
+  margin-top: 300;
+   margin-left: 80px;">	 
+<b> As soon as the model gets loaded  there will be an alert and the canvas will turn dark then you can draw any one of 10 categories
+<ul>
+	<li>T-shirt/top</li>
+	<li> Trouser </li>
+	<li>	Pullover </li>
+    <li>  Dress </li>
+    <li>     Coat </li>
+       <li>  Sandal </li>
+        <li> Shirt</li>
+        <li> Sneaker  </li>
+        <li> Bag </li>
+       <li> Ankle boot</li>
+</ul> 
+click on classify and the model will predict the item  </b></div>
+</body>
+</html>
